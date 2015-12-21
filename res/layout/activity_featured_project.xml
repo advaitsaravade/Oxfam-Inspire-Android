@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_featured"
+    tools:context="org.oxfamindia.oxfamindiafundraiser.Fragment_Feature"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/featured_hero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="3dp"
+        android:layout_centerInParent="true">
+        
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B30064" >
+
+    <ImageView
+        android:id="@+id/hero_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/draft_image" />
+    <ImageView
+        android:id="@+id/featured_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_whatshot_white_48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    
+    <RelativeLayout
+        android:id="@+id/mast_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#E70052"
+        android:layout_below="@id/hero_image" >
+        
+        <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/donate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+    <TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8.5dp"
+            android:paddingBottom="8.5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#E70052"
+            android:text="GIVE ₹100" />
+
+</android.support.v7.widget.CardView>
+        
+    <org.oxfamindia.oxfamindiafundraiser.CustomTextView2
+        android:id="@+id/proj_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/donate_button"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:text="Project Title Here"
+        android:paddingRight="15dp" />
+    
+    </RelativeLayout>
+    <org.oxfamindia.oxfamindiafundraiser.CustomTextView
+        android:id="@+id/proj_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mast_container"
+        android:layout_marginTop="5dp"
+        android:background="#6A5695"
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:textColor="#F2F2EA"
+        android:text="Concept of the number one. Tingling of the spine encyclopaedia galactica, concept of the number one stirred by starlight cosmic ocean"
+        android:paddingRight="15dp" />
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+    
+    
+</RelativeLayout>

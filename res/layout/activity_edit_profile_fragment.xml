@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.oxfamindia.oxfamindiafundraiser.EditProfileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#161E21" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/acc_photo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/account_photo" />
+    <TextView
+        android:id="@+id/txt_setphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tap to set profile photo"
+        android:layout_below="@id/acc_photo"
+        android:paddingBottom="20dp" />
+    <RelativeLayout
+        android:id="@+id/f_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_setphoto"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/l_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/f_name"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/l_name"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress"
+            android:layout_below="@id/emailid"
+            android:gravity="top" />
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/address"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/city"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/state"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip/Area/Pin Code"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/country"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/pincode"
+            android:inputType="phone" />
+        <EditText
+            android:id="@+id/pannumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pan Number (optional)"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mobilenumber"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/finishbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/pannumber"
+    android:textSize="17sp"
+    android:textColor="@color/accent"
+    android:background="@drawable/rounded_white_rect"
+    android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    
+</RelativeLayout>
+</ScrollView>

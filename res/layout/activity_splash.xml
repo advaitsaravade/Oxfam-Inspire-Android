@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.oxfamindia.oxfamindiafundraiser.SplashActivity"
+    android:background="@drawable/bcolortransit" >
+<RelativeLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_wotxt_white" />
+
+    <TextView
+        android:id="@+id/oxfam_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Oxfam India"
+        android:textColor="#FFF"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/subtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oxfam_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Inspire Change"
+        android:textColor="#F5F5EC"
+        android:textSize="25dp" />
+    </RelativeLayout>
+    <RelativeLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+    <TextView
+        android:id="@+id/intro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:lineSpacingExtra="1dp"
+        android:text="Inspire is an app by Oxfam India that lets you enable constructive change in our nation."
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+    <Button
+    android:id="@+id/next_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="60dp"
+    android:layout_below="@id/intro1"
+    android:text="NEXT"
+    android:textSize="28sp"
+    android:textColor="#099E40"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/rounded_white_rect"
+    android:visibility="invisible" />
+</RelativeLayout>
+<RelativeLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+    <TextView
+        android:id="@+id/intro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:lineSpacingExtra="1dp"
+        android:text="Support the projects you're passionate about with one tap and share that good feeling with friends."
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+    <Button
+    android:id="@+id/next_button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="60dp"
+    android:layout_below="@id/intro2"
+    android:text="ALRIGHT"
+    android:textSize="28sp"
+    android:textColor="#099E40"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/rounded_white_rect"
+    android:visibility="invisible" />
+</RelativeLayout>
+
+</RelativeLayout>

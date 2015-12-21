@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.oxfamindia.oxfamindiafundraiser.Fragment_AboutApp"
+    android:background="#dadada" >
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp" >
+    <ImageView
+        android:id="@+id/logo_icon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_web"
+        android:elevation="5dp"
+        android:paddingTop="20dp" />
+    <org.oxfamindia.oxfamindiafundraiser.CustomTextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oxfam India Inspire"
+        android:textColor="#212121"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_below="@id/logo_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" />
+    <org.oxfamindia.oxfamindiafundraiser.CustomTextView
+        android:id="@+id/appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0 (OG)"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#212121"
+        android:textSize="17sp"
+        android:layout_below="@id/appname"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp" />
+    <org.oxfamindia.oxfamindiafundraiser.CustomTextView
+        android:id="@+id/appdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A creative work by a collection of molecules known as Advait Saravade.\n\nhttp://goo.gl/W6M5a"
+        android:textColor="#212121"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/appversion"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:gravity="center" />
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

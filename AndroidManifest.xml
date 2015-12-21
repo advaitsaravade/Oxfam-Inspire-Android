@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.oxfamindia.oxfamindiafundraiser"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProjectsActivity"
+            android:label="@string/title_activity_projects" >
+        </activity>
+        <activity
+            android:name=".IndividualProjectsActivity"
+            android:label="@string/title_activity_individual_projects"
+            android:parentActivityName=".ProjectsActivity"
+            android:theme="@style/transAction" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.oxfamindia.oxfamindiafundraiser.ProjectsActivity" />
+        </activity>
+        <activity
+            android:name=".DonatePortalActivity"
+            android:label="@string/title_activity_donate_portal"
+            android:parentActivityName=".IndividualProjectsActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.oxfamindia.oxfamindiafundraiser.IndividualProjectsActivity" />
+        </activity>
+        <activity
+            android:name=".PostDonateActivity"
+            android:label="@string/title_activity_post_donate"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".FeaturedProjectActivity"
+            android:label="@string/title_activity_featured_project" >
+        </activity>
+        <activity
+            android:name=".Fragment_Projects"
+            android:label="@string/title_activity_fragment__projects" >
+        </activity>
+        <activity
+            android:name=".SetupProfileActivity"
+            android:label="@string/title_activity_setup_profile" >
+        </activity>
+        <activity
+            android:name=".EditProfileFragment"
+            android:label="@string/title_activity_edit_profile_fragment" >
+        </activity>
+    </application>
+
+</manifest>
